@@ -1,8 +1,10 @@
 const counterSpan = document.getElementById('counter');
 const playButton = document.getElementById('play');
+const skipButton = document.getElementById('skipButton');
+const ringSound = new Audio('/audio/timerRing.mp3');
 
 let timer
-let time = 1500; //25 minutes
+var time = 1500; //25 minutes
 let isRunning = false;
 
 function formatTime(seconds) {
@@ -34,13 +36,22 @@ function pauseTimer(){
 }
 
 function stopTimer(){
+    if(isRunning) {
+        ringSound.play();
+    }
     isRunning = false;
     clearInterval(timer);
-    time = 20; 
+    switchTimer();
     counterSpan.textContent = formatTime(time);
 }
 
 playButton.addEventListener('click', () => {
     startTimer();
+    
+
 });
+
+skipButton.addEventListener('click', () =>  {
+    stopTimer();
+})
 

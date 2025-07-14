@@ -7,11 +7,54 @@ body {
   text-align: center;
   padding: 50px;
   background-color: rgb(186, 73, 73);
+  transition: background-color 0.25s ease-in-out; 
   font-family: 'IBM', sans-serif;
   font-size: xx-large;
   color: #ffff;
+
+  display: flex;             /* 1. Make the body a flex container */
+  flex-direction: column;    /* 2. Arrange content in a column (top to bottom) */
+  justify-content: center;   /* 3. Vertically center items along the main axis */
+  align-items: center;       /* 4. Horizontally center items along the cross axis */
+  min-height: 50vh;         /* 5. Ensure the body takes at least the full viewport height */
+  margin: 0;                 /* Remove default body margin */
 }
 
-a {
-  color: black;
+button {
+  display:inline-block;
+  cursor:pointer;
+  font-family: 'IBM', sans-serif;
+  border-radius: 4px;
+  color: #ffff;
+  background-color: rgb(186,73,74);
+  box-shadow: 0 3px #999;
+}
+
+button:active{
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+.startButton {
+  background-color: #ffff;
+  color: rgb(186, 73, 73);
+}
+
+.startButtonPressed{
+  background-color: #1111;
+}
+
+.pomodoroButton {
+  padding:10px 10px;
+  background-color: rgb(186, 73, 73)
+}
+
+.shortBreakButton {
+  padding:10px 10px;
+  background-color:rgb(76,145,150);
+}
+
+.longBreakButton{
+  padding:10px 10px;
+  background-color:rgb(57,112,151);
 }

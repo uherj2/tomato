@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Application</title>
+  <title>Tomato</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
   <div id="counter">25:00</div>
-  <p></p>
-  <button id="play">start</button>
+  <div>
+  <button id="pomodoroButton" class="pomodoroButton"></button>
+  <button id="shortBreakButton" class="shortBreakButton"></button>
+  <button id="longBreakButton" class="longBreakButton"></button>
+  </div>
+  <div>
+  <button id="play" class="startButton">start</button>
+  <button id="skipButton">></button>
+  </div>
   <script src="/javascripts/timer.js"></script>
+  <script src="/javascripts/timeSwitch.js"></script>
 </body>
 </html>
