@@ -12,12 +12,12 @@ body {
   font-size: xx-large;
   color: #ffff;
 
-  display: flex;             /* 1. Make the body a flex container */
-  flex-direction: column;    /* 2. Arrange content in a column (top to bottom) */
-  justify-content: center;   /* 3. Vertically center items along the main axis */
-  align-items: center;       /* 4. Horizontally center items along the cross axis */
-  min-height: 50vh;         /* 5. Ensure the body takes at least the full viewport height */
-  margin: 0;                 /* Remove default body margin */
+  display: flex;            
+  flex-direction: column;   
+  justify-content: center;   
+  align-items: center;       
+  min-height: 50vh;        
+  margin: 0;                 
 }
 
 button {
@@ -35,13 +35,31 @@ button:active{
   transform: translateY(4px);
 }
 
+#timeControlContainer {
+  margin-top: 15px;
+  display:flex;
+  gap: 10px
+}
+
 .startButton {
   background-color: #ffff;
   color: rgb(186, 73, 73);
 }
 
-.startButtonPressed{
-  background-color: #1111;
+.skipButton{
+  background-color: #ffff;
+  transition: visibility 0.25s ease-in-out; 
+  color: rgb(186, 73, 73);
+}
+
+.alignmentButton{
+  visibility: hidden;
+}
+
+.startButton.on{
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+  transition: 0.25s ease-in-out; 
 }
 
 .pomodoroButton {
