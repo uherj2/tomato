@@ -1,14 +1,7 @@
 const counterSpan = document.getElementById('counter');
 const playButton = document.getElementById('play');
+const skipButton = document.getElementById('skip');
 const ringSound = new Audio('/audio/timerRing.mp3');
-
-const timeControlContainer = document.getElementById('timeControlContainer');
-const skipButton = document.createElement('button');
-const alignmentButton = document.createElement('button');
-skipButton.textContent = '>';
-alignmentButton.textContent = '>';
-skipButton.classList.add('skipButton');
-alignmentButton.classList.add('skipButton', 'alignmentButton');
 
 
 let timer
@@ -62,16 +55,15 @@ function updateStartButton(){
     if(isRunning) {
         isStartButtonOn = true;
         playButton.classList.add('on'); 
-        playButton.textContent = "Pause"  
-        timeControlContainer.appendChild(skipButton);
-        timeControlContainer.insertBefore(alignmentButton, playButton);
-        
+        playButton.textContent = "Pause";
+        skipButton.style.pointerEvents = "auto"
+        skipButton.style.opacity = "1";
      } else {
         isStartButtonOn = false;
         playButton.classList.remove('on');
-        playButton.textContent = "Start"
-        skipButton.remove();
-        alignmentButton.remove();
+        playButton.textContent = "Start";
+        skipButton.style.pointerEvents = "none"
+        skipButton.style.opacity = "0";
     }
 }
 

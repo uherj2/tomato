@@ -9,14 +9,14 @@ body {
   background-color: rgb(186, 73, 73);
   transition: background-color 0.25s ease-in-out; 
   font-family: 'IBM', sans-serif;
-  font-size: xx-large;
+  font-size:75px;
   color: #ffff;
 
   display: flex;            
   flex-direction: column;   
   justify-content: center;   
   align-items: center;       
-  min-height: 50vh;        
+  min-height: 75vh;        
   margin: 0;                 
 }
 
@@ -24,19 +24,21 @@ button {
   display:inline-block;
   cursor:pointer;
   font-family: 'IBM', sans-serif;
-  border-radius: 4px;
+  font-size: 24px;
+  border-radius: 10px;
+  border-width: 3.5px;
   color: #ffff;
   background-color: rgb(186,73,74);
-  box-shadow: 0 3px #999;
+  box-shadow: 0 7px #999;
 }
 
 button:active{
-  box-shadow: 0 1px #666;
+  box-shadow: 0 3px #666;
   transform: translateY(4px);
 }
 
 #timeControlContainer {
-  margin-top: 15px;
+  margin-top: 30px;
   display:flex;
   gap: 10px
 }
@@ -48,7 +50,9 @@ button:active{
 
 .skipButton{
   background-color: #ffff;
-  transition: visibility 0.25s ease-in-out; 
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .25s ease-in-out; 
   color: rgb(186, 73, 73);
 }
 
@@ -57,22 +61,22 @@ button:active{
 }
 
 .startButton.on{
-  box-shadow: 0 1px #666;
+  box-shadow: 0 3px #666;
   transform: translateY(4px);
   transition: 0.25s ease-in-out; 
 }
 
 .pomodoroButton {
-  padding:10px 10px;
+  padding:20px 20px;
   background-color: rgb(186, 73, 73)
 }
 
 .shortBreakButton {
-  padding:10px 10px;
+  padding:20px 20px;
   background-color:rgb(76,145,150);
 }
 
 .longBreakButton{
-  padding:10px 10px;
+  padding:20px 20px;
   background-color:rgb(57,112,151);
 }
