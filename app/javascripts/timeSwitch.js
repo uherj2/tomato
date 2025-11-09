@@ -5,7 +5,7 @@ const body = document.body
 
 var POMODOROTIME = 1500;
 var SHORTBREAKTIME = 300;
-var LONGBREAKTIME = 3; //should be 900
+var LONGBREAKTIME = 900; //should be 900
 
 var POMODORO = 0;
 var SHORTBREAK = 1;
