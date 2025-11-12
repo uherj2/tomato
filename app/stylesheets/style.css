@@ -43,10 +43,11 @@ button:active{
   gap: 10px
 }
 
-.startButton {
+.controlButton{
   background-color: #ffff;
   color: rgb(186, 73, 73);
 }
+
 
 .skipButton{
   background-color: #ffff;
@@ -54,13 +55,21 @@ button:active{
   opacity: 0;
   transition: opacity .25s ease-in-out; 
   color: rgb(186, 73, 73);
+  width: 50px
 }
 
-.alignmentButton{
-  visibility: hidden;
+.wakeButton{
+  visibility: visible;
+  background-color: #ffff;
+  color: rgb(186, 73, 73);
+  width: 50px
 }
 
-.startButton.on{
+.wakeButton i {
+  font-size: 1.2rem;
+}
+
+.controlButton.on{
   box-shadow: 0 3px #666;
   transform: translateY(4px);
   transition: 0.25s ease-in-out; 

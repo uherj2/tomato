@@ -3,7 +3,7 @@ const shortBreakButton = document.getElementById('shortBreakButton');
 const longBreakButton = document.getElementById('longBreakButton');
 const body = document.body
 
-var POMODOROTIME = 1500;
+var POMODOROTIME = 1500; 
 var SHORTBREAKTIME = 300;
 var LONGBREAKTIME = 900; //should be 900
 

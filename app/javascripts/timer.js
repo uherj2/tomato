@@ -1,5 +1,5 @@
 const counterSpan = document.getElementById('counter');
-const playButton = document.getElementById('play');
+const playButton = document.getElementById('start');
 const skipButton = document.getElementById('skip');
 const ringSound = new Audio('/audio/timerRing.mp3');
 
@@ -39,6 +39,7 @@ function pauseTimer(){
 }
 
 function stopTimer(){
+    console.log("is running " + isRunning)
     if(isRunning) {
         ringSound.play();
     }
