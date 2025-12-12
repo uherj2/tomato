@@ -28,7 +28,6 @@ function toggleWakeIcon() {
     wakeIcon.classList.toggle('bi-brightness-high')
 }
 
-
 wakeButton.addEventListener('click', () => {
     if(wakeIsPressed){
         wakeIsPressed = false

@@ -3,15 +3,20 @@
 	src: url('../images/WebPlus_IBM_MDA.woff');
 }
 
+#threejs-container {
+  width:300px;
+  height: 300px;
+  border: 0px solid black;
+}
+
 body {
   text-align: center;
   padding: 50px;
-  background-color: rgb(186, 73, 73);
-  transition: background-color 0.25s ease-in-out; 
   font-family: 'IBM', sans-serif;
   font-size:75px;
+  background-color: #ba494a;
+  transition: background-color 0.25s ease-in-out;
   color: #ffff;
-
   display: flex;            
   flex-direction: column;   
   justify-content: center;   
@@ -27,8 +32,8 @@ button {
   font-size: 24px;
   border-radius: 10px;
   border-width: 3.5px;
-  color: #ffff;
-  background-color: rgb(186,73,74);
+  color: #ffffff;
+  background-color: #ba494a;
   box-shadow: 0 7px #999;
 }
 
