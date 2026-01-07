@@ -84,7 +84,7 @@ class Timer {
 class PomodoroTimer extends Timer {
     static POMODOROTIME = 1500; 
     static SHORTBREAKTIME = 300;
-    static LONGBREAKTIME = 3; //should be 900
+    static LONGBREAKTIME = 900; //should be 900
 
     static POMODORO = 0;
     static SHORTBREAK = 1;
